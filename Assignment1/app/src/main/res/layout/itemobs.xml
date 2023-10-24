@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/OBSparentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/obsEdit"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:background="#2196f3"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/obsDelete"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:gravity="center"
+            android:background="#F44336"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/OBSmainLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_2"
+            android:src="@mipmap/ic_milestone"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/i_ObsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observation Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img_2"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/i_ObsDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observation Date"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/img_2"
+            android:layout_below="@+id/i_ObsName"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            />
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
